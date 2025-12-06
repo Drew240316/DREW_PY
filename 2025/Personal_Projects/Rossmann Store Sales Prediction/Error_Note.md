@@ -1,5 +1,6 @@
 <details>
 <summary><strong>ImportError</strong></summary>
+  
 # ImportError: cannot import name 'arima' from 'statsmodels.tsa.arima_model' 
   
   import 시, arima > ARIMA로 수정
