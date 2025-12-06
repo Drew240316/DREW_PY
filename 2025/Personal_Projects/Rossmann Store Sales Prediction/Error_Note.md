@@ -68,6 +68,9 @@
   괄호 = 실행, isnull = 함수명 이므로, 앞에서 함수를 실행하지 않아서 오류가 났다.
 
 
+  # AttributeError: 'DataFrame' object has no attribute 'type'
+  datafram전체 type은 변수명.info()
+
 
 
   
