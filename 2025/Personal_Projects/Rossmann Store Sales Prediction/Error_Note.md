@@ -15,3 +15,16 @@
 
 </details>
 
+
+
+<details>
+AttributeError: 'NoneType' object has no attribute 'rename'
+
+   columns를 꼭 쓰기
+   store = store.rename(columns = {
+    "Store" : "매장ID",
+    "StoreType" : "매장유형",
+}
+,inplace = True)
+  
+</details>
