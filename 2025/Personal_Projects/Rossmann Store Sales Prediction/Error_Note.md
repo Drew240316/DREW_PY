@@ -28,3 +28,17 @@ AttributeError: 'NoneType' object has no attribute 'rename'
 ,inplace = True)
   
 </details>
+
+
+<details>
+AttributeError: 'Index' object has no attribute 'year'
+날짜 타입인 인덱스를 사용해야、 인덱스에서 요일 월 일 주 추출 가능.
+
+train['연도'] = train.index.isocalendar().year
+train['월'] = train.index.month
+train['일'] = train.index.day
+train['주'] = train.index.isocalendar().week
+train.head()
+</details>
+
+
