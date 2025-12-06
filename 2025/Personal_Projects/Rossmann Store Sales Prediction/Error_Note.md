@@ -30,7 +30,7 @@
 
 
 <details>
-
+<summary><strong>AttributeError</strong></summary>
   # AttributeError: 'NoneType' object has no attribute 'rename'
 
    columns를 꼭 쓰기
