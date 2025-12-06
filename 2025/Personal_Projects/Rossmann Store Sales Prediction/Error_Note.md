@@ -63,6 +63,11 @@
   여기서 week = 31 은, "2015년의 31번째 주(31주차)"
 
 
+  # AttributeError: 'function' object has no attribute 'sum'
+  train.isnull.sum()에서 train.isnull().sum()로 고친다.
+  괄호 = 실행, isnull = 함수명 이므로, 앞에서 함수를 실행하지 않아서 오류가 났다.
+
+
 
 
   
