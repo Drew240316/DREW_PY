@@ -89,7 +89,7 @@
   # ValueError: For argument "ascending" expected type bool, received type str.
   train_store_joined.groupby('매장유형')[['방문고객수','예상매출액','고객당평균매출']].sum().sort_values('예상매출액', ascending = 'desc')
   ascending은 true/false인데 여기서 ''가 있으면 str로 인식 ''를 삭제한다.
-  train_store_joined.groupby('매장유형')[['방문고객수','예상매출액','고객당평균매출']].sum().sort_values('예상매출액', ascending = 'desc')
+  train_store_joined.groupby('매장유형')[['방문고객수','예상매출액','고객당평균매출']].sum().sort_values('예상매출액', ascending = True)
 
 </details>
 
