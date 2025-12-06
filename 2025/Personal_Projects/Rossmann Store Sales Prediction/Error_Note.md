@@ -77,3 +77,19 @@
 </details>
 
 
+
+<detail>
+
+  #  ValueError: Cannot subset columns with a tuple with more than one element. Use a list instead.
+  
+  train_store_joined.groupby('매장유형')['방문고객수','예상매출액','고객당평균매출'].sum().sort_values('예상매출액', ascending = 'desc')
+  한글일 경우, 여기서 ['방문고객수','예상매출액','고객당평균매출'] 이 리스트가 아니라 튜플로 인식됨.
+  컬럼을 리스트로 여러 개 선택하면 DataFrame 반환함.
+  
+  # ValueError: For argument "ascending" expected type bool, received type str.
+  train_store_joined.groupby('매장유형')[['방문고객수','예상매출액','고객당평균매출']].sum().sort_values('예상매출액', ascending = 'desc')
+  ascending은 true/false인데 여기서 ''가 있으면 str로 인식 ''를 삭제한다.
+  train_store_joined.groupby('매장유형')[['방문고객수','예상매출액','고객당평균매출']].sum().sort_values('예상매출액', ascending = 'desc')
+
+</details>
+
