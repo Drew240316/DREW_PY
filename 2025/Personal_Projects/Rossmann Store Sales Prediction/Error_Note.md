@@ -14,7 +14,8 @@
 
 <details>
 <summary><strong>ModuleNotFoundError</strong></summary>
-# ModuleNotFoundError: No module named 'sklearn'
+
+  # ModuleNotFoundError: No module named 'sklearn'
   
   !pip install scikit-learn
 
